@@ -1,0 +1,44 @@
+.sidebar {
+    width: 200px;
+    height: 100%;
+    display: inline-block;
+    background: #222222;
+}
+
+.dir {
+    height: 40px;
+    padding: 10px;
+    border-radius: 0px;
+    border-bottom: 1px solid silver;
+    /*background: #669966;*/
+    /*text-shadow: 1px 0px 0px black;*/
+    font-weight: bold;
+    color: #a1a1a1;
+}
+
+.dir:hover {
+    -moz-outline-radius: 10px;
+    border: 2px solid orange;
+    cursor: pointer;
+}
+
+.dir span {
+    display: inline-block;
+}
+
+.logo-rotate {
+    transform: rotate(90deg);
+}
+
+.dir-logo {
+    margin-right: 10px;
+}
+
+.dir-content {
+    background: #555555;
+    display: none;
+}
+
+.ele {
+    padding-left: 60px;
+}
