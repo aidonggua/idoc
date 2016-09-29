@@ -1,0 +1,29 @@
+{
+  "name": "idoc",
+  "version": "1.0.0",
+  "description": "a interface manage system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/librey/idoc.git"
+  },
+  "keywords": [
+    "golang",
+    "html5"
+  ],
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "liteserver": "^0.3.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/librey/idoc/issues"
+  },
+  "homepage": "https://github.com/librey/idoc#readme"
+}
