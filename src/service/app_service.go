@@ -25,8 +25,8 @@ func SaveApp(app *App) (int64, error) {
 }
 
 //删除App
-func DeleteApp(app *App) (int64, error) {
-	return gorm.Delete(app)
+func DeleteApp(id int) (int64, error) {
+	return gorm.Delete(&App{Id: id})
 }
 
 //查询所有App

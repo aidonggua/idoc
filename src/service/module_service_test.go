@@ -6,26 +6,26 @@ import (
 	"testing"
 )
 
-func TestSaveApp(t *testing.T) {
+func TestSaveModule(t *testing.T) {
 	gorm.InitDB("mysql", "root:root@tcp(localhost:3306)/idoc")
-	id, err := SaveApp(&App{Name: "测试", Token: "idoc"})
+	id, err := SaveModule(&Module{Name: "测试模块", AppId: 1, Sn: 1})
 	if err != nil {
 		t.Log(err)
 	}
 	t.Log(id)
 }
 
-func TestDeleteApp(t *testing.T) {
+func TestDeleteModule(t *testing.T) {
 	gorm.InitDB("mysql", "root:root@tcp(localhost:3306)/idoc")
-	success, err := DeleteApp(1)
+	success, err := DeleteModule(1)
 	if err != nil {
 		t.Log(err)
 	}
 	t.Log(success)
 }
 
-func TestQueryAllApp(t *testing.T) {
+func TestQueryAllModule(t *testing.T) {
 	gorm.InitDB("mysql", "root:root@tcp(localhost:3306)/idoc")
-	apps := QueryAllApp()
-	t.Log(apps)
+	modules := QueryAllModule()
+	t.Log(modules)
 }
