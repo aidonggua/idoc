@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+*:focus{
+  outline: 0;
+}
+
 ul, p {
   margin: 0;
   padding: 0;
@@ -13,4 +17,7 @@ html {
   font-family: "Microsoft Sans Serif", sans-serif;
   font-size: 14px;
   line-height: 1.4;
+}
+ul{
+  list-style:none;
 }
