@@ -100,16 +100,31 @@
     position: absolute;
     top: -6px;
   }
-  li{
+  li {
     background: none;
     padding: 8px 5px 8px 12px;
     border-radius: 2px;
     -webkit-transition: all 0.2s ease-out 0s;
     transition: all 0.2s ease-out 0s;
-    &:hover{
+    &:hover {
       background: #1caf9a;
       color: #fff;
     }
   }
 }
 
+.g-b-left {
+  ul {
+    list-style: none;
+    width: 100%;
+    color: #fff;
+  }
+  li {
+    line-height: 40px;
+    padding-left: 50px;
+    &:hover {
+      background: #1caf9a;
+      color: #fff;
+    }
+  }
+}
